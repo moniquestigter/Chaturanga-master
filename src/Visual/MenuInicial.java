@@ -33,15 +33,19 @@ public class MenuInicial extends javax.swing.JPanel {
         createUser = new javax.swing.JButton();
         Exit = new javax.swing.JButton();
         pass = new javax.swing.JPasswordField();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLabel4 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(400, 300));
         setLayout(null);
 
+        jLabel1.setForeground(new java.awt.Color(255, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("USERNAME");
         add(jLabel1);
         jLabel1.setBounds(150, 30, 90, 30);
 
+        jLabel2.setForeground(new java.awt.Color(255, 204, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("PASSWORD");
         jLabel2.setPreferredSize(new java.awt.Dimension(54, 14));
@@ -84,6 +88,13 @@ public class MenuInicial extends javax.swing.JPanel {
         Exit.setBounds(310, 270, 90, 30);
         add(pass);
         pass.setBounds(100, 150, 210, 30);
+        add(jLayeredPane1);
+        jLayeredPane1.setBounds(328, 98, 100, 100);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/rsz_fondo.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        add(jLabel4);
+        jLabel4.setBounds(-200, 0, 660, 330);
     }// </editor-fold>//GEN-END:initComponents
 
     private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
@@ -116,6 +127,8 @@ public class MenuInicial extends javax.swing.JPanel {
     private javax.swing.JButton createUser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton logIn;
     private javax.swing.JPasswordField pass;
     private javax.swing.JTextField user;
